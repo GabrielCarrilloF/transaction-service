@@ -1,4 +1,4 @@
-import { AccountRepository } from "../domain/repositories/account.repository";
+import { AccountRepository } from "../../domain/repositories/account.repository";
 
 export class CreateAccountUseCase {
     constructor(private accountRepository: AccountRepository) {}

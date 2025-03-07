@@ -16,4 +16,10 @@ Account.init(
   { sequelize, modelName: "account" }
 );
 
+export const AccountModel = sequelize.define("Account", {
+    id: { type: DataTypes.INTEGER, autoIncrement: true, primaryKey: true },
+    name: { type: DataTypes.STRING, allowNull: false },
+    balance: { type: DataTypes.FLOAT, allowNull: false }
+});
+
 export { Account };
